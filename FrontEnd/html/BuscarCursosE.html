@@ -9,6 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@300;500;700&display=swap"
         rel="stylesheet">
+    <script src="/scripts/api/Entidad.js"></script>
+    <script src="/scripts/api/Curso.js"></script>
+    <script src="/scripts/views/cursos_ver.js"></script>
     <title>Cursos Estudiante</title>
     <style>
         :root {
@@ -46,10 +49,12 @@
             --lg: 18px;
             --btt: 36px;
         }
+
         a {
             text-decoration: none;
             text-align: center;
         }
+
         body {
             font-family: 'Nunito', sans-serif;
             font-family: 'Fredoka One', cursive;
@@ -231,6 +236,17 @@
             border: 3px solid #7AFF58;
             padding: 10px;
         }
+
+        #tablacursos {
+            position: absolute;
+            top: 100%;
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-bottom: 100px;
+        }
+        #tablacursos thead{
+            color: #33FF00;
+        }
     </style>
 
 </head>
@@ -248,7 +264,7 @@
 
         <img src="./Fondolupa.png" alt="Flupa" class="Flupa">
 
-        <a href="#" >
+        <a href="#">
             <img src="./lupamorada.png" alt="Lupa" class="Lupa">
         </a>
 
@@ -266,7 +282,19 @@
 
         <img src="./iconobaile.png" alt="iconobaile" class="iconobaile">
 
-
+        <div id="tablacursos">
+            <hr><br>
+            <table>
+                <thead>
+                    <th>ID</th>
+                    <th>NOMBRE</th>
+                    <th>DESCRIPCION</th>
+                    <th>NUMERO MODULOS</th>
+                    <th>CATEGORIA</th>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
 </body>
 
 </html>

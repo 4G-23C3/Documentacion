@@ -9,6 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@300;500;700&display=swap"
         rel="stylesheet">
+    <script src="/scripts/api/Entidad.js"></script>
+    <script src="/scripts/api/Curso.js"></script>
+    <script src="/scripts/views/cursos_subir.js"></script>
     <title>Subir Curso - Creadores</title>
     <style>
         :root {
@@ -46,10 +49,12 @@
             --lg: 18px;
             --btt: 36px;
         }
+
         a {
             text-decoration: none;
             text-align: center;
         }
+
         body {
             font-family: 'Nunito', sans-serif;
             font-family: 'Fredoka One', cursive;
@@ -238,61 +243,36 @@
             line-height: 41px;
         }
 
-        .inputlink {
-            position: absolute;
-            width: 400px;
-            height: 30px;
-            left: 800px;
-            top: 740px;
-            border: 4px solid #FFC700;
-            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-            border-radius: 30px;
-            font-family: 'Nunito', sans-serif;
-            font-style: normal;
-            font-weight: 800;
-            font-size: 20px;
-            line-height: 41px;
-
-        }
-
-        .inputinfcurso {
-            position: absolute;
-            width: 700px;
-            height: 150px;
-            left: 400px;
-            top: 820px;
-            border: 4px solid #FFC700;
-            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-            border-radius: 30px;
-            font-family: 'Nunito', sans-serif;
-            font-style: normal;
-            font-weight: 800;
-            font-size: 20px;
-            line-height: 41px;
-        }
-
-        .Suma {
-            position: absolute;
-            width: 40px;
-            height: 40px;
-            left: 400px;
-            top: 1000px;
-        }
-
-        .AñadirMódulo {
+        .Categoria {
             position: absolute;
             width: 463px;
-            height: 37px;
-            left: 400px;
-            top: 970px;
+            height: 9px;
+            left: 125px;
+            top: 810px;
             font-family: 'Fredoka One';
             font-style: normal;
             font-weight: 400;
-            font-size: 25px;
+            font-size: 35px;
             line-height: 48px;
             text-align: center;
-            color: rgba(177, 171, 171, 0.89);
+            color: #2438F4;
             text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        .inputnombre2 {
+            position: absolute;
+            width: 400px;
+            height: 30px;
+            left: 300px;
+            top: 900px;
+            border: 4px solid #FFC700;
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            border-radius: 30px;
+            font-family: 'Nunito', sans-serif;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 20px;
+            line-height: 41px;
         }
 
         .Guardar {
@@ -319,8 +299,6 @@
             border: 3px solid #2438F4;
         }
     </style>
-
-
 </head>
 
 <body>
@@ -329,43 +307,33 @@
         <a href="/html/Inicio.html">
             <img src="./Logotipo Chiquiskillpng.png" alt="logo" class="logo">
         </a>
-
         <rectangle class="YellowHeader"></rectangle>
-
         <h1 class="HolaCreador"> ¡HOLA! Creador </h1>
-
         <a href="/html/CursosCreador.html" class="Miscursoscre">Mis Cursos</a>
-
         <img src="./Fondosend.png" alt="Fsent" class="Fsent">
-
-        <a href="/html/SubirCursoC.html" >
+        <a href="/html/SubirCursoC.html">
             <img src="./sendazul.png" alt="Sent" class="Sent">
-            </a>
-        
-        <h2 class="SubirCurso"> Subir Curso </h2>
+        </a>
+    </div>
 
+    <h2 class="SubirCurso"> Subir Curso </h2>
+    <form id="curso-insert">
         <h3 class="TítuloCurso"> Título del curso </h2>
-
-            <input type="text" id=" TítuloCurso" placeholder="Título del curso" class="inputtítulocurso">
-
-            <h3 class="Descripción"> Descripción </h2>
-
-                <input type="text" id=" Descripción" placeholder="Descripción" class="inputdescripción">
-
-                <h3 class="Módulos"> Módulos </h2>
-
-                    <input type="text" id=" Nombre" placeholder="Nombre" class="inputnombre">
-
-                    <input type="url" id=" Link del video" placeholder="Link del video" class="inputlink">
-
-                    <input type="text" id=" Informacióncurso" placeholder="Información curso" class="inputinfcurso">
-
-                    <img src="./suma.png" alt="suma" class="Suma">
-
-                    <h3 class="AñadirMódulo"> Añadir otro Módulo </h2>
-
-                        <input type="submit" value="Guardar" class="Guardar">
-
+        <input type="text" id=" TítuloCurso" name="nombre" placeholder="Título del curso" class="inputtítulocurso">
+        <h3 class="Descripción"> Descripción </h2>
+        <input type="text" id=" Descripción" name="descripcion" placeholder="Descripción" class="inputdescripción">
+        <h3 class="Módulos"> Módulos </h2>
+        <input type="number" id=" Nombre" name="numero_modulos" placeholder="Numero de Modulos" class="inputnombre">
+        <h3 class="Categoria"> Categoria </h2>
+        <input type="text" id=" Nombre" name="categoria" placeholder="Id Categoria" class="inputnombre2">
+        <!--
+        <input type="url" id=" Link del video" name="" placeholder="Link del video" class="inputlink">
+        <input type="text" id=" Informacióncurso" name="" placeholder="Información curso" class="inputinfcurso">
+        <img src="./suma.png" alt="suma" class="Suma">
+        <h3 class="AñadirMódulo"> Añadir otro Módulo </h2>
+        -->
+        <button type="submit" class="Guardar">Guardar</button>
+    </form>
 </body>
 
 </html>
