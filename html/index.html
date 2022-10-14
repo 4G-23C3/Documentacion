@@ -6,13 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@300;500;700&display=swap"
         rel="stylesheet">
-    <script src="/scripts/api/Entidad.js"></script>
-    <script src="/scripts/api/Estudiante.js"></script>
-    <script src="/scripts/views/estudiantes.js"></script>
-    <title> Registro Estudiantes</title>
+    <title>Inicio</title>
     <style>
         :root {
             --white: #FFFFFF;
@@ -50,28 +48,10 @@
             --btt: 36px;
         }
 
-        a {
-            text-decoration: none;
-            text-align: center;
-        }
-
         body {
             font-family: 'Nunito', sans-serif;
             font-family: 'Fredoka One', cursive;
             margin: 0;
-        }
-
-        .login {
-            width: 100%;
-            height: 100vh;
-            display: grid;
-            place-items: center;
-        }
-
-        .form-container {
-            display: grid;
-            grid-template-rows: auto 1fr auto;
-            width: 200px;
         }
 
         .logo {
@@ -131,7 +111,7 @@
             width: 299px;
             height: 71px;
             left: 580px;
-            top: 31px;
+            top: 30px;
             filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
             font-family: 'Nunito', sans-serif;
             color: var(--white);
@@ -162,100 +142,50 @@
             line-height: 71px;
         }
 
-        .inputinput-nacimiento {
-            box-sizing: border-box;
+        .video {
             position: absolute;
-            width: 627px;
-            height: 67px;
-            left: 42px;
-            top: 180px;
-            background: #ECFFF1;
-            border: 3px solid #33FF00;
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            width: 622px;
+            height: 334px;
+            left: 44px;
+            top: 170px;
+            border: 10px solid #FFB800;
             border-radius: 30px;
-            font-family: 'Nunito', sans-serif;
-            font-style: normal;
-            font-weight: 800;
-            font-size: 25px;
-            color: rgba(80, 71, 71, 0.730);
-            line-height: 41px;
-            padding-left: 10px;
         }
 
-        .inputinput-usuario {
-            box-sizing: border-box;
+        .Play {
             position: absolute;
-            width: 627px;
-            height: 67px;
-            left: 42px;
-            top: 260px;
-            background: #ECFFF1;
-            border: 3px solid #33FF00;
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            width: 622px;
+            height: 334px;
+            left: 45px;
+            top: 170px;
+            border: 10px solid #FFB800;
             border-radius: 30px;
-            font-family: 'Nunito', sans-serif;
-            font-style: normal;
-            font-weight: 800;
-            font-size: 25px;
-            line-height: 41px;
-            padding-left: 10px;
         }
 
-        .inputinput-email {
-            box-sizing: border-box;
+        .lf-container {
             position: absolute;
-            width: 627px;
-            height: 67px;
-            left: 42px;
-            top: 340px;
-            background: #ECFFF1;
-            border: 3px solid #33FF00;
+            width: 720px;
+            height: 750px;
+            left: 10px;
+            top: 140px;
+            background: #EB9938;
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-            border-radius: 30px;
-            font-family: 'Nunito', sans-serif;
-            font-style: normal;
-            font-weight: 800;
-            font-size: 25px;
-            line-height: 41px;
-            padding-left: 10px;
+            border-radius: 50px;
         }
 
-        .inputinput-contraseña {
-            box-sizing: border-box;
+        .titlecreadores {
             position: absolute;
-            width: 627px;
-            height: 67px;
-            left: 42px;
-            top: 420px;
-            background: #ECFFF1;
-            border: 3px solid #33FF00;
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-            border-radius: 30px;
-            font-family: 'Nunito', sans-serif;
-            font-style: normal;
-            font-weight: 800;
-            font-size: 25px;
-            line-height: 41px;
-            padding-left: 10px;
-        }
-
-        .inputinput-confirmacontraseña {
-            box-sizing: border-box;
-            position: absolute;
-            width: 627px;
-            height: 67px;
-            left: 42px;
+            width: 363px;
+            height: 73px;
+            left: 39px;
             top: 500px;
-            background: #ECFFF1;
-            border: 3px solid #33FF00;
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-            border-radius: 30px;
-            font-family: 'Nunito', sans-serif;
+            font-family: 'Fredoka One';
             font-style: normal;
-            font-weight: 800;
-            font-size: 25px;
-            line-height: 41px;
-            padding-left: 10px;
+            font-weight: 400;
+            font-size: 60px;
+            line-height: 73px;
+            color: #FFFFFF;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         }
 
         .darkyellow-button {
@@ -263,8 +193,8 @@
             position: absolute;
             width: 299px;
             height: 71px;
-            left: 206px;
-            top: 640px;
+            left: 77px;
+            top: 630px;
             background: #FFC700;
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
             border-radius: 30px;
@@ -274,50 +204,105 @@
             font-style: normal;
             font-weight: 800;
             font-size: 36px;
-            line-height: 49px;
+            line-height: 71px;
+            color: #FFFFFF;
+
+        }
+
+        .sky {
+            box-sizing: border-box;
+            position: absolute;
+            width: 299px;
+            height: 71px;
+            left: 77px;
+            top: 720px;
+            background: #00E0FF;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 30px;
+            border: 3px solid #00E0FF;
+            position: absolute;
+            font-family: 'Nunito', sans-serif;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 36px;
+            line-height: 71px;
             color: #FFFFFF;
         }
 
-        .video {
+        .books {
+            position: absolute;
+            width: 376px;
+            height: 400px;
+            left: 360px;
+            top: 500px;
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            border-radius: 50px;
+        }
+
+        .rg-container {
+            position: absolute;
+            width: 720px;
+            height: 750px;
+            left: 755px;
+            top: 140px;
+            background: #9CEB38;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 50px;
+        }
+
+        .rgvideo {
             position: absolute;
             width: 622px;
             height: 334px;
-            left: 769px;
-            top: 190px;
+            left: 800px;
+            top: 170px;
             border: 10px solid rgba(77, 255, 62, 0.69);
             border-radius: 30px;
         }
 
-        .Play {
+        .rgplay {
             position: absolute;
             width: 622px;
             height: 334px;
-            left: 769px;
-            top: 190px;
+            left: 800px;
+            top: 170px;
             border: 10px solid rgba(77, 255, 62, 0.69);
             border-radius: 30px;
         }
 
-        .title {
+        .titleestudiantes {
             position: absolute;
             width: 422px;
             height: 73px;
             left: 983px;
-            top: 520px;
+            top: 500px;
+            font-family: 'Fredoka One';
             font-style: normal;
             font-weight: 400;
-            font-size: 50px;
+            font-size: 60px;
             line-height: 73px;
-            color: #7284E2;
+            color: #FFFFFF;
             text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         }
 
-        .EstudianteBook {
+        .fpink {
+            box-sizing: border-box;
             position: absolute;
-            width: 420px;
-            height: 290px;
-            left: 650px;
-            top: 500px;
+            width: 299px;
+            height: 71px;
+            left: 1107px;
+            top: 630px;
+            background: #FF00D6;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 30px;
+            border: 3px solid #FF00D6;
+            position: absolute;
+            font-family: 'Nunito', sans-serif;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 36px;
+            line-height: 71px;
+            color: #FFFFFF;
         }
 
         .lightyellow {
@@ -325,8 +310,8 @@
             position: absolute;
             width: 299px;
             height: 71px;
-            left: 1092px;
-            top: 640px;
+            left: 1107px;
+            top: 720px;
             background: #FFD600;
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
             border-radius: 30px;
@@ -338,74 +323,67 @@
             font-size: 36px;
             line-height: 71px;
             color: #FFFFFF;
-            text-align: center;
         }
 
-        .footer {
+        .kid {
             position: absolute;
-            width: 1550px;
-            height: 60px;
-            left: 0px;
-            top: 770px;
-            background: #7AFF58;
+            width: 415px;
+            height: 510px;
+            left: 676px;
+            top: 440px;
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            border-radius: 50px;
+        }
+
+        a {
+            text-decoration: none;
+            text-align: center;
         }
     </style>
+
 </head>
 
 <body>
-    
-    <a href="/html/Inicio.html">
-        <img src="./Logotipo Chiquiskillpng.png" alt="logo"
-        class="logo">
+    <div class="header-container">
+
+        <a href="/html/index.html">
+            <img src="./Logotipo Chiquiskillpng.png" alt="logo" class="logo">
         </a>
-    
-        <a href="/html/Inicio.html" class="red">Inicio</a>
-        
+
+        <a href="/html/index.html" class="red">Inicio</a>
         <a href="/html/Sobrenosotros.html" class="cian">Sobre Nosotros</a>
-        
         <a href="/html/Donaciones.html" class="pple">Donaciones</a>
-    
-    
-    
-    <a href="/html/LoginEstudiantes.html" class="lightyellow">Iniciar Sesión</a>
 
+        <img src="./Instagram.png" alt="Instagram" class="Instagram">
+        <img src="./Facebook.png" alt="Facebook" class="Facebook">
+        <img src="./twitter.png" alt="Twitter" class="Twitter">
 
-    <img src="./Instagram.png" alt="Instagram" class="Instagram">
-    <img src="./Facebook.png" alt="Facebook" class="Facebook">
-    <img src="./twitter.png" alt="Twitter" class="Twitter">
+        <div class="left-container">
 
-    <div class="video-container">
-        <rectangle class="video"></rectangle>
-        <img src="./Play.png" alt="Play" class="Play">
+            <background class="lf-container"></background>
+            <rectangle class="video"></rectangle>
+            <img src="./Play.png" alt="Play" class="Play">
 
-        <h1 class="title"> ESTUDIANTES </h1>
+            <h1 class="titlecreadores"> CREADORES </h1>
 
-        <img src="./2.png" alt="EstudianteBook" class="EstudianteBook">
-    </div>
+            <a href="/html/RegistroCreadores.html" class="darkyellow-button">Registrarse</a>
+            <a href="/html/LoginCreadores.html" class="sky">Iniciar Sesión</a>
+            <img src="./img1.png" alt="books" class="books">
 
-    <rectangle class="footer"></rectangle>
+            <div class="right-container">
 
-    <div class="login">
-        <div class="form-container">
-            <form action="/" class="form">
-                <input type="date" id="Nacimiento" class="inputinput-nacimiento" min="1920-01-01">
+                <background class="rg-container"></background>
+                <rectangle class="rgvideo"></rectangle>
+                <img src="Play.png" alt="rgplay" class="rgplay">
 
-                <input type="text" id="Usuario" placeholder="Usuario" class="inputinput-usuario">
+                <h1 class="titleestudiantes"> ESTUDIANTES </h1>
 
-                <input type="email" id="Email" placeholder="Email" class="inputinput-email">
+                <a href="/html/RegistroEstudiantes.html" class="fpink">Registrarse</a>
+                <a href="/html/LoginEstudiantes.html" class="lightyellow">Iniciar Sesión</a>
 
-                <input type="password" id="Contraseña" placeholder="Contraseña" class="inputinput-contraseña">
+                <img src="./img2.png" alt="kid" class="kid">
 
-                <input type="password" id="ConfirmaContraseña" placeholder="Confirma Contraseña"
-                    class="inputinput-confirmacontraseña">
-
-                <button type="submit" class="darkyellow-button">Registrarse</button>
-
-            </form>
-        </div>
-    </div>
-    </div>
-
+            </div>
 </body>
 
 </html>

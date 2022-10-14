@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@300;500;700&display=swap"
         rel="stylesheet">
-    <title> Información - Donaciones </title>
+    <title> Iniciar Sesión Estudiantes</title>
     <style>
         :root {
             --white: #FFFFFF;
@@ -56,6 +56,19 @@
             font-family: 'Nunito', sans-serif;
             font-family: 'Fredoka One', cursive;
             margin: 0;
+        }
+
+        .login {
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+
+        .form-container {
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            width: 200px;
         }
 
         .logo {
@@ -146,234 +159,184 @@
             line-height: 71px;
         }
 
-        .bluefond {
+        .titlere {
             position: absolute;
-            width: 100%;
-            height: 590px;
+            width: 422px;
+            height: 73px;
+            left: 83px;
+            top: 110px;
+            font-family: 'Fredoka One';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 50px;
+            line-height: 73px;
+            color: #7284E2;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        .Estudianteregistro {
+            position: absolute;
+            width: 610px;
+            height: 400px;
             left: 0px;
-            top: 150px;
-            background: #ECF6F8;
-            border-radius: 50px;
-        }
-
-        .girldesk {
-            position: absolute;
-            width: 550px;
-            height: 430px;
-            
-            left: -50px;
-            top: 230px;
-            background: url(img4.png);
-        }
-
-        .coberturafond {
-            position: absolute;
-            width: 450px;
-            height: 230px;
-            left: 850px;
-            top: 187px;
-            background: rgba(111, 159, 252, 0.26);
-
-        }
-
-        .cobertura {
-            position: absolute;
-            width: 658px;
-            height: 63px;
-            left: 960px;
-            top: 190px;
-            font-family: 'Fredoka One';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 40px;
-            line-height: 54px;
-            color: #703FA0;
-            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        }
-
-        .pcobertura {
-            position: absolute;
-            width: 400px;
-            height: 100px;
-            left: 873px;
-            top: 260px;
-            font-family: 'Nunito';
-            font-style: normal;
-            font-weight: 800;
-            font-size: 18px;
-            line-height: 25px;
-            text-align: center;
-            color: rgba(80, 71, 181, 0.72);
-        }
-
-        .comolohacemosfond {
-            position: absolute;
-            width: 450px;
-            height: 200px;
-            left: 853px;
-            top: 430px;
-            background: rgba(51, 255, 0, 0.16);
-
-        }
-
-        .comolohacemos {
-            position: absolute;
-            width: 870px;
-            height: 47px;
-            left: 900px;
-            top: 430px;
-            font-family: 'Fredoka One';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 40px;
-            line-height: 54px;
-            color: #527C28;
-            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        }
-
-        .pcomolohacemos {
-            position: absolute;
-            width: 400px;
-            height: 100px;
-            left: 873px;
-            top: 500px;
-            font-family: 'Nunito';
-            font-style: normal;
-            font-weight: 800;
-            font-size: 18px;
-            line-height: 25px;
-            text-align: center;
-            color: #38933B;
-        }
-
-        .dondedonarfond {
-            box-sizing: border-box;
-            position: absolute;
-            width: 400px;
-            height: 200px;
-            left: 430px;
-            top: 215px;
-            background: #C5FFF4;
-        }
-
-        .dondedonar {
-            position: absolute;
-            width: 431px;
-            height: 60px;
-            left: 480px;
             top: 200px;
-            font-family: 'Fredoka One';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 40px;
-            line-height: 54px;
-            color: #007585;
-            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         }
 
-        .pdondedonar {
+        .Backform {
             position: absolute;
-            width: 350px;
-            height: 100px;
-            left: 450px;
-            top: 270px;
-            font-family: 'Nunito';
-            font-style: normal;
-            font-weight: 800;
-            font-size: 18px;
-            line-height: 25px;
-            text-align: center;
-            color: #387D93;
+            width: 500px;
+            height: 350px;
+            left: 650px;
+            top: 170px;
+            background: #D4FBCB;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 30px;
         }
 
-        .objetivofond {
-            position: absolute;
-            width: 400px;
-            height: 200px;
-            left: 430px;
-            top: 430px;
-            background: rgba(252, 212, 111, 0.33);
-        }
-
-        .objetivo {
-            position: absolute;
-            width: 219px;
-            height: 81px;
-            left: 550px;
-            top: 430px;
-            font-family: 'Fredoka One';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 40px;
-            line-height: 54px;
-            color: #A03F97;
-            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        }
-
-        .pobjetivo {
+        .IniciarSesiónes {
             position: absolute;
             width: 379px;
-            height: 207px;
-            left: 442px;
-            top: 500px;
-            font-family: 'Nunito';
+            height: 73px;
+            left: 755px;
+            top: 145px;
+            font-family: 'Fredoka One';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 45px;
+            line-height: 73px;
+            color: #51C896;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        .inputinput-correoise {
+            box-sizing: border-box;
+            position: absolute;
+            width: 380px;
+            height: 67px;
+            left: 710px;
+            top: 280px;
+            background: #ECFFF1;
+            border: 3px solid #33FF00;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 30px;
+            font-family: 'Nunito', sans-serif;
             font-style: normal;
             font-weight: 800;
-            font-size: 18px;
-            line-height: 25px;
+            font-size: 25px;
+            line-height: 41px;
+            padding-left: 10px;
+        }
+
+        .inputinput-contraseñaise {
+            box-sizing: border-box;
+            position: absolute;
+            width: 380px;
+            height: 67px;
+            left: 710px;
+            top: 370px;
+            background: #ECFFF1;
+            border: 3px solid #33FF00;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 30px;
+            font-family: 'Nunito', sans-serif;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 25px;
+            line-height: 41px;
+            padding-left: 10px;
+        }
+
+        .fpink {
+            box-sizing: border-box;
+            position: absolute;
+            width: 150px;
+            height: 43px;
+            left: 980px;
+            top: 460px;
+            background: #7bc5a6e0;
+            border-radius: 30px;
+            border: 3px solid #51C896;
+            position: absolute;
+            font-family: 'Nunito', sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 26px;
+            line-height: 35px;
+            color: #FFFFFF;
             text-align: center;
-            color: rgba(181, 71, 163, 0.88);
+        }
+
+        .darkyellowise {
+            box-sizing: border-box;
+            position: absolute;
+            width: 299px;
+            height: 71px;
+            left: 760px;
+            top: 540px;
+            background: #FFC700;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 30px;
+            border: 3px solid #FFC700;
+            position: absolute;
+            font-family: 'Nunito', sans-serif;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 30px;
+            line-height: 71px;
+            color: #FFFFFF;
+            text-align: center;
+        }
+
+        .footercise {
+            position: absolute;
+            width: 100%;
+            height: 60px;
+            left: 0px;
+            bottom: 0%;
+            background: #7AFF58;
         }
     </style>
+
 </head>
 
 <body>
-    <a href="/html/Inicio.html">
+    <a href="/html/index.html">
         <img src="./Logotipo Chiquiskillpng.png" alt="logo" class="logo">
     </a>
 
-    <a href="/html/Inicio.html" class="red">Inicio</a>
-
+    <a href="/html/index.html" class="red">Inicio</a>
     <a href="/html/Sobrenosotros.html" class="cian">Sobre Nosotros</a>
-
     <a href="/html/Donaciones.html" class="pple">Donaciones</a>
-
 
     <img src="./Instagram.png" alt="Instagram" class="Instagram">
     <img src="./Facebook.png" alt="Facebook" class="Facebook">
     <img src="./twitter.png" alt="Twitter" class="Twitter">
 
-    <rectangle class="bluefond"></rectangle>
+    <h1 class="titlere"> ESTUDIANTES </h1>
 
-    <div class="textcontainer">
-        <img src="./img4.png" alt="girldesk" class="girldesk">
+    <img src="./6.png" alt="Estudianteregistro" class="Estudianteregistro">
 
-        <img src="./coberturafond.jpg" alt="coberturafond" class="coberturafond">
+    <rectangle class="Backform"></rectangle>
 
-        <h1 class="cobertura"> Cobertura </h1>
-        <p class="pcobertura"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptatem totam quos
-            ipsum, ut atque porro error velit exercitationem accu.</p>
+    <h2 class="IniciarSesiónes"> Iniciar Sesión </h2>
 
-        <img src="./comolohacemosfond.jpg" alt="comolohacemosfond" class="comolohacemosfond">
+    <div class="iniciarsesiones">
+        <div class="form-containerise">
+            <form action="/" class="formise">
+                <input type="email" id="Correo" placeholder="Correo" class="inputinput-correoise">
 
-        <h1 class="comolohacemos"> ¿Cómo lo hacemos? </h1>
-        <p class="pcomolohacemos"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptatem totam quos
-            ipsum, ut atque porro error velit exercitationem accu.</p>
-
-        <img src="./dondedonarfond.jpg" alt="dondedonarfond" class="dondedonarfond">
-
-        <h1 class="dondedonar"> ¿Dónde donar? </h1>
-        <p class="pdondedonar"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptatem totam quos
-            ipsum, ut atque porro error velit exercitationem accu.</p>
-
-        <img src="./objetivofond.jpg" alt="objetivofond" class="objetivofond">
-
-        <h1 class="objetivo"> Objetivo </h1>
-        <p class="pobjetivo"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptatem totam quos
-            ipsum, ut atque porro error velit exercitationem accu.</p>
+                <input type="password" id="Contraseña" placeholder="Contraseña" class="inputinput-contraseñaise">
+            </form>
+        </div>
     </div>
 
-    </head>
+    <a href="/html/CursosEstudiante.html" class="fpink">Ingresar</a>
+
+    <a href="/html/RegistroEstudiantes.html" class="darkyellowise">Registrarse</a>
+
+    <rectangle class="footercise"></rectangle>
+
+
 </body>
 
 </html>
