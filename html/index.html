@@ -52,16 +52,73 @@
             font-family: 'Nunito', sans-serif;
             font-family: 'Fredoka One', cursive;
             margin: 0;
+            padding: 0;
         }
-
+        a {
+            text-decoration: none;
+            text-align: center;
+        }
+        header{
+            display: flex;
+            align-items: center;
+            background-color:gainsboro;
+            justify-content: space-between;
+        }
+        header nav{
+            display: flex;
+            align-items: center;
+        }
+        .imagenchiki{
+            margin-left: 1.2em;
+        }
+        .indices a{
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            font-family: 'Nunito', sans-serif;
+            border-radius: 30px;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 20px;
+            line-height: 20px;
+            margin: 0 10%;
+            padding: 0.8em 0.8em;  
+        }
+        .redes img{
+            padding: 0 1px;
+        }
         .logo {
-            position: absolute;
             width: 271px;
             height: 101px;
-            left: 15px;
-            top: 15px;
         }
-
+        .red {
+            color: var(--white);
+            background-color: var(--red);
+            border-color: var(--red);
+        }
+        .cian {
+            color: var(--white);
+            background-color: var(--cian);
+            border-color: var(--cian);
+        }
+        .pple {
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            font-family: 'Nunito', sans-serif;
+            color: var(--white);
+            background-color: var(--pple);
+            border-color: var(--pple);
+        }
+        .Instagram {
+            width: 79px;
+            height: 74px;
+        }
+        .Facebook {
+            width: 68px;
+            height: 65px;
+        }
+        .Twitter {
+            width: 98px;
+            height: 89px;
+        }
+/*
         .Instagram {
             position: absolute;
             width: 79px;
@@ -87,60 +144,7 @@
             top: 17px;
             filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
         }
-
-        .red {
-            position: absolute;
-            width: 147.2px;
-            height: 71px;
-            left: 368px;
-            top: 31px;
-            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-            font-family: 'Nunito', sans-serif;
-            color: var(--white);
-            background-color: var(--red);
-            border-color: var(--red);
-            font-style: normal;
-            font-weight: 800;
-            font-size: 36px;
-            line-height: 71px;
-            border-radius: 30px;
-        }
-
-        .cian {
-            position: absolute;
-            width: 299px;
-            height: 71px;
-            left: 580px;
-            top: 30px;
-            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-            font-family: 'Nunito', sans-serif;
-            color: var(--white);
-            background-color: var(--cian);
-            border-color: var(--cian);
-            border-radius: 30px;
-            font-style: normal;
-            font-weight: 800;
-            font-size: 36px;
-            line-height: 71px;
-        }
-
-        .pple {
-            position: absolute;
-            width: 299px;
-            height: 71px;
-            left: 900px;
-            top: 31px;
-            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-            font-family: 'Nunito', sans-serif;
-            color: var(--white);
-            background-color: var(--pple);
-            border-color: var(--pple);
-            border-radius: 30px;
-            font-style: normal;
-            font-weight: 800;
-            font-size: 36px;
-            line-height: 71px;
-        }
+*/
 
         .video {
             position: absolute;
@@ -206,7 +210,6 @@
             font-size: 36px;
             line-height: 71px;
             color: #FFFFFF;
-
         }
 
         .sky {
@@ -334,31 +337,30 @@
             filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
             border-radius: 50px;
         }
-
-        a {
-            text-decoration: none;
-            text-align: center;
-        }
     </style>
 
 </head>
 
 <body>
-    <div class="header-container">
-
-        <a href="/html/index.html">
-            <img src="./Logotipo Chiquiskillpng.png" alt="logo" class="logo">
-        </a>
-
-        <a href="/html/index.html" class="red">Inicio</a>
-        <a href="/html/Sobrenosotros.html" class="cian">Sobre Nosotros</a>
-        <a href="/html/Donaciones.html" class="pple">Donaciones</a>
-
-        <img src="./Instagram.png" alt="Instagram" class="Instagram">
-        <img src="./Facebook.png" alt="Facebook" class="Facebook">
-        <img src="./twitter.png" alt="Twitter" class="Twitter">
-
-        <div class="left-container">
+    <main>
+        <header>
+            <nav class="imagenchiki">
+                <a href="/html/index.html">
+                    <img src="/html/Logotipo Chiquiskillpng.png" alt="logo" class="logo">
+                </a>
+            </nav>
+            <nav class="indices">
+                <a href="/html/index.html" class="red">Inicio</a>
+                <a href="/html/Sobrenosotros.html" class="cian">Sobre Nosotros</a>
+                <a href="/html/Donaciones.html" class="pple">Donaciones</a>
+            </nav>
+            <nav class="redes">
+                <img src="./Instagram.png" alt="Instagram" class="Instagram">
+                <img src="./Facebook.png" alt="Facebook" class="Facebook">
+                <img src="./twitter.png" alt="Twitter" class="Twitter">
+            </nav>
+        </header>
+        <!-- <section class="left-container">
 
             <background class="lf-container"></background>
             <rectangle class="video"></rectangle>
@@ -370,7 +372,7 @@
             <a href="/html/LoginCreadores.html" class="sky">Iniciar Sesión</a>
             <img src="./img1.png" alt="books" class="books">
 
-            <div class="right-container">
+            <section class="right-container">
 
                 <background class="rg-container"></background>
                 <rectangle class="rgvideo"></rectangle>
@@ -383,7 +385,8 @@
 
                 <img src="./img2.png" alt="kid" class="kid">
 
-            </div>
+            </section> -->
+    </main>
 </body>
 
 </html>
