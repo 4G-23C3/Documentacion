@@ -47,58 +47,84 @@
             --lg: 18px;
             --btt: 36px;
         }
-
         body {
             font-family: 'Nunito', sans-serif;
             font-family: 'Fredoka One', cursive;
             margin: 0;
             padding: 0;
+            max-width: 100%;
+            background-color: #ef803f85;
         }
+
         a {
             text-decoration: none;
             text-align: center;
         }
-        header{
+
+        header {
+            background-color:white;
             display: flex;
             align-items: center;
-            background-color:gainsboro;
             justify-content: space-between;
         }
-        header nav{
+
+        header div {
             display: flex;
             align-items: center;
         }
-        .imagenchiki{
+
+        .imagenchiki {
             margin-left: 1.2em;
+            flex: 0.7 10%;
         }
-        .indices a{
+
+        .indices {
+            margin: 0 1rem;
+            flex: 0.6 30px;
+        }
+
+        .indices a {
             filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
             font-family: 'Nunito', sans-serif;
-            border-radius: 30px;
-            font-style: normal;
-            font-weight: 800;
-            font-size: 20px;
-            line-height: 20px;
-            margin: 0 10%;
-            padding: 0.8em 0.8em;  
+            border-radius: 38px;
+            font-weight: 900;
+            font-size: 20px;            line-height: 15px;
+            padding: 12px 2rem;
         }
-        .redes img{
-            padding: 0 1px;
+        .redes img {
+            padding: 0 5px;
         }
+
         .logo {
-            width: 271px;
-            height: 101px;
+            width: 200px;
+            height: 75px;
+            margin-right: 3rem;
         }
+
         .red {
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            font-family: 'Nunito', sans-serif;
             color: var(--white);
             background-color: var(--red);
             border-color: var(--red);
+            border-radius: 38px;
+            font-weight: 900;
+            font-size: 20px;
+            line-height: 15px;
+            padding: 12px 2rem;
+            margin-right: 1rem;
         }
+
         .cian {
-            color: var(--white);
+            /* color: var(--white);
             background-color: var(--cian);
-            border-color: var(--cian);
+            border-color: var(--cian); */
+            color: var(--white);
+            background-color: var(--pple);
+            border-color: var(--pple);
+            margin-right: 20px;
         }
+
         .pple {
             filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
             font-family: 'Nunito', sans-serif;
@@ -106,45 +132,21 @@
             background-color: var(--pple);
             border-color: var(--pple);
         }
+
         .Instagram {
-            width: 79px;
-            height: 74px;
-        }
-        .Facebook {
-            width: 68px;
-            height: 65px;
-        }
-        .Twitter {
-            width: 98px;
-            height: 89px;
-        }
-/*
-        .Instagram {
-            position: absolute;
-            width: 79px;
-            height: 74px;
-            left: 1235px;
-            top: 28px;
+            width: 50px;
+            height: 50px;
         }
 
         .Facebook {
-            position: absolute;
-            width: 68px;
-            height: 65px;
-            left: 1330px;
-            top: 27px;
-            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            width: 45px;
+            height: 45px;
         }
 
         .Twitter {
-            position: absolute;
-            width: 98px;
-            height: 89px;
-            left: 1400px;
-            top: 17px;
-            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            width: 60px;
+            height: 60px;
         }
-*/
 
         .video {
             position: absolute;
@@ -344,23 +346,23 @@
 <body>
     <main>
         <header>
-            <nav class="imagenchiki">
+            <div class="imagenchiki">
                 <a href="/html/index.html">
                     <img src="/html/Logotipo Chiquiskillpng.png" alt="logo" class="logo">
                 </a>
-            </nav>
-            <nav class="indices">
                 <a href="/html/index.html" class="red">Inicio</a>
+            </div>
+            <div class="indices">
                 <a href="/html/Sobrenosotros.html" class="cian">Sobre Nosotros</a>
                 <a href="/html/Donaciones.html" class="pple">Donaciones</a>
-            </nav>
-            <nav class="redes">
+            </div>
+            <div class="redes">
                 <img src="./Instagram.png" alt="Instagram" class="Instagram">
                 <img src="./Facebook.png" alt="Facebook" class="Facebook">
                 <img src="./twitter.png" alt="Twitter" class="Twitter">
-            </nav>
+            </div>
         </header>
-        <!-- <section class="left-container">
+        <section class="left-container">
 
             <background class="lf-container"></background>
             <rectangle class="video"></rectangle>
@@ -385,7 +387,7 @@
 
                 <img src="./img2.png" alt="kid" class="kid">
 
-            </section> -->
+            </section>
     </main>
 </body>
 

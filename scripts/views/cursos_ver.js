@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", event => {
                         <td>${curso.nombre_curso}</td>
                         <td>${curso.descripcion_curso}</td>
                         <td>${curso.numero_modulos}</td>
-                        <td>${curso.categoria_id_categoria}</td>
+                        <td>${curso.categoria.nombre_categoria}</td>
                         <td>
                             <button type="button">Eliminar</button>
                         </td>
